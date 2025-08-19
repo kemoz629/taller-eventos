@@ -6,6 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-    <button>Saludar</button>
+    <div style="padding: 5px; background-color: green;" id="div1">
+        <button onclick="saludar(event)">Saludar</button>
+    </div>
 </body>
 </html>
+<script>
+    function saludar(event) {
+        alert("¡Hola!");
+        event.stopPropagation();
+    }
+</script>
+<script src="eventos.js"></script>
